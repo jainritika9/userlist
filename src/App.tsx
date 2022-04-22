@@ -8,10 +8,10 @@ function App() {
   const [currentPage,setCurrentPage]=useState(1)
 
   const CurrentPage=(direction:string)=>{
-    if (direction == 'previous') {
+    if (direction === 'previous') {
       setCurrentPage(currentPage-1);
     }
-    else if (direction == 'next') {
+    else if (direction === 'next') {
       setCurrentPage(currentPage+1);
     }
   }
